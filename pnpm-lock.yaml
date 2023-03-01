@@ -6,7 +6,9 @@ specifiers:
   debug: ~2.6.9
   dotenv: ^16.0.3
   express: ~4.16.1
+  express-validator: ^6.15.0
   http-errors: ~1.6.3
+  luxon: ^3.2.1
   mongoose: ^6.9.0
   morgan: ~1.9.1
   nodemon: ^2.0.20
@@ -18,7 +20,9 @@ dependencies:
   debug: 2.6.9
   dotenv: 16.0.3
   express: 4.16.4
+  express-validator: 6.15.0
   http-errors: 1.6.3
+  luxon: 3.2.1
   mongoose: 6.10.0
   morgan: 1.9.1
   pug: 2.0.0-beta11
@@ -1226,6 +1230,14 @@ packages:
     engines: {node: '>= 0.6'}
     dev: false
 
+  /express-validator/6.15.0:
+    resolution: {integrity: sha512-r05VYoBL3i2pswuehoFSy+uM8NBuVaY7avp5qrYjQBDzagx2Z5A77FZqPT8/gNLF3HopWkIzaTFaC4JysWXLqg==}
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      lodash: 4.17.21
+      validator: 13.9.0
+    dev: false
+
   /express/4.16.4:
     resolution: {integrity: sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg==}
     engines: {node: '>= 0.10.0'}
@@ -1485,6 +1497,11 @@ packages:
   /longest/1.0.1:
     resolution: {integrity: sha512-k+yt5n3l48JU4k8ftnKG6V7u32wyH2NfKzeMto9F/QRE0amxy/LayxwlvjjkZEIzqR+19IrtFO8p5kB9QaYUFg==}
     engines: {node: '>=0.10.0'}
+    dev: false
+
+  /luxon/3.2.1:
+    resolution: {integrity: sha512-QrwPArQCNLAKGO/C+ZIilgIuDnEnKx5QYODdDtbFaxzsbZcc/a7WFq7MhsVYgRlwawLtvOUESTlfJ+hc/USqPg==}
+    engines: {node: '>=12'}
     dev: false
 
   /media-typer/0.3.0:
@@ -2059,6 +2076,11 @@ packages:
     hasBin: true
     dev: false
     optional: true
+
+  /validator/13.9.0:
+    resolution: {integrity: sha512-B+dGG8U3fdtM0/aNK4/X8CXq/EcxU2WPrPEkJGslb47qyHsxmbggTWK0yEA4qnYVNF+nxNlN88o14hIcPmSIEA==}
+    engines: {node: '>= 0.10'}
+    dev: false
 
   /vary/1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
