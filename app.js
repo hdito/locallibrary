@@ -8,6 +8,9 @@ var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 const catalogRouter = require("./routes/catalog");
 
+const compression = require("compression");
+const helmet = require("helmet");
+
 var app = express();
 
 require("dotenv").config();
@@ -24,6 +27,9 @@ async function main() {
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "pug");
+
+app.use(compression());
+app.use(helmet());
 
 app.use(logger("dev"));
 app.use(express.json());
