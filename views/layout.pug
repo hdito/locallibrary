@@ -20,7 +20,7 @@ html
                   a(href= link.url)= link.title
               li
                 hr
-              each link in [{ url: '/catalog/books/create', title: 'Create new author' }, { url: '/catalog/genre/create', title: 'Create new genre'}, { url: '/catalog/book/create', title: 'Create new book' }, { url: 'catalog/bookinstances/create', title: 'Create new book instance (copy)' }]
+              each link in [{ url: '/catalog/author/create', title: 'Create new author' }, { url: '/catalog/genre/create', title: 'Create new genre'}, { url: '/catalog/book/create', title: 'Create new book' }, { url: '/catalog/bookinstance/create', title: 'Create new book instance (copy)' }]
                 li
                   a(href= link.url)= link.title 
 
